@@ -61,19 +61,19 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #FCFBE7;
-@water:             #C4DFF6;
-@grass:             #E6F2C1;
+@land:              #F2EFE9;
+@water:             #99B3CC;
+@grass:             #BDD7A5;
 @beach:             #FFEEC7;
-@park:              #DAF2C1;
+@park:              #B5D29C;
 @cemetery:          #D6DED2;
 @wooded:            #C3D9AD;
 @agriculture:       #F2E8B6;
 
 @building:          #E4E0E0;
-@hospital:          rgb(229,198,195);
-@school:            #FFF5CC;
-@sports:            #B8E6B8;
+@hospital:          #E5C6C3;
+@school:            #DED2AC;
+@sports:            #BADEAE;
 
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
@@ -93,11 +93,11 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #E65C5C;
+@motorway_line:     #F08A37;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
+@trunk_line:        #F2B942;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
@@ -131,7 +131,7 @@ Map { font-directory: url(./fonts); }
 /* BOUNDARY COLORS
 /* ================================================================== */
 
-@admin_2:           #324;
+@admin_2:           #768;
 
 /* ================================================================== */
 /* LABEL COLORS

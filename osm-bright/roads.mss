@@ -65,9 +65,9 @@ come in as well.
 
 /* ---- Casing ----------------------------------------------- */
 
-#roads_high::outline[zoom>=11][zoom<=20],
-#tunnel[render='1_outline'][zoom>=11][zoom<=20],
-#bridge[render='1_outline'][zoom>=11][zoom<=20]{
+#roads_high::outline[zoom>=11][zoom<=22],
+#tunnel[render='1_outline'][zoom>=11][zoom<=22],
+#bridge[render='1_outline'][zoom>=11][zoom<=22]{
   /* -- colors & styles -- */
   line-cap: round;
   [bridge=1],
@@ -76,30 +76,30 @@ come in as well.
   }
   line-join: round;
   line-color: @standard_case;
-  [bridge=1] { line-color: @standard_case * 0.8; }
+  [bridge=1] { line-color: @standard_case * 0.85; }
   [type='motorway'],
   [type='motorway_link'] {
     line-color: @motorway_case;
-    [bridge=1] { line-color: @motorway_case * 0.8; }
+    [bridge=1] { line-color: @motorway_case * 0.85; }
   }
   [type='trunk'],
   [type='trunk_link'] {
     line-color: @trunk_case;
-    [bridge=1] { line-color: @trunk_case * 0.8; }
+    [bridge=1] { line-color: @trunk_case * 0.85; }
   }
   [type='primary'],
   [type='primary_link'] {
     line-color: @primary_case;
-    [bridge=1] { line-color: @primary_case * 0.8; }
+    [bridge=1] { line-color: @primary_case * 0.85; }
   }
   [type='secondary'],
   [type='secondary_link'] {
     line-color: @secondary_case;
-    [bridge=1] { line-color: @secondary_case * 0.8; }
+    [bridge=1] { line-color: @secondary_case * 0.85; }
   }
   [stylegroup='railway'] {
     line-color: fadeout(@land,50%);
-    [bridge=1] { line-color: @secondary_case * 0.8; }
+    [bridge=1] { line-color: @secondary_case * 0.85; }
   }
   [tunnel=1] { line-dasharray: 3,3; }        
   /* -- widths -- */
@@ -174,9 +174,9 @@ come in as well.
 }
 
 
-#roads_high[zoom>=11][zoom<=20],
-#tunnel[render='3_inline'][zoom>=11][zoom<=20],
-#bridge[render='3_inline'][zoom>=11][zoom<=20]{
+#roads_high[zoom>=11][zoom<=22],
+#tunnel[render='3_inline'][zoom>=11][zoom<=22],
+#bridge[render='3_inline'][zoom>=11][zoom<=22]{
   /* -- colors & styles -- */
   line-color: @standard_fill;
   [type='motorway'],
@@ -287,8 +287,8 @@ come in as well.
 }
 
 /* ---- Bridge fill for dashed lines -------------------------------- */
-#tunnel[render='2_line'][zoom>=14][zoom<=20],
-#bridge[render='2_line'][zoom>=14][zoom<=20]{
+#tunnel[render='2_line'][zoom>=14][zoom<=22],
+#bridge[render='2_line'][zoom>=14][zoom<=22]{
   /* -- colors & styles -- */
   [stylegroup='noauto'] {
     line-color: @land;
