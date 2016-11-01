@@ -10,7 +10,7 @@
 /* PLACE NAMES
 /* ================================================================== */
 
-#place::country[type='country'][zoom>3][zoom<9] {
+#place::country[type='country'][zoom>2][zoom<9] {
   text-name:'[name]';
   text-face-name:@sans_bold;
   text-placement:point;
@@ -180,10 +180,10 @@
 
 /* ---- Other small places ------------------------------------------ */
 
-#place::small[type='village'][zoom>=13],
-#place::small[type='suburb'][zoom>=13],
-#place::small[type='hamlet'][zoom>=13],
-#place::small[type='neighbourhood'][zoom>=13] {
+#place::small[type='village'][zoom>=14],
+#place::small[type='suburb'][zoom>=14],
+#place::small[type='hamlet'][zoom>=14],
+#place::small[type='neighbourhood'][zoom>=14] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -224,7 +224,7 @@
   }
 }
 
-#place::small[type='locality'][zoom>=15] {
+#place::small[type='locality'][zoom>=16] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -257,14 +257,14 @@
 
 #area_label {
   // Bring in labels gradually as one zooms in, bases on polygon area
-  [zoom>=10][area>102400000],
-  [zoom>=11][area>25600000],
-  [zoom>=13][area>1600000],
-  [zoom>=14][area>320000],
-  [zoom>=15][area>80000],
-  [zoom>=16][area>20000],
-  [zoom>=17][area>5000],
-  [zoom>=18][area>=0] {
+  [zoom>=11][area>102400000],
+  [zoom>=12][area>25600000],
+  [zoom>=14][area>1600000],
+  [zoom>=15][area>320000],
+  [zoom>=16][area>80000],
+  [zoom>=17][area>20000],
+  [zoom>=18][area>5000],
+  [zoom>=19][area>=0] {
     text-name: "[name]";
     text-halo-radius: 1.5;
     text-face-name:@sans;
@@ -301,35 +301,35 @@
       text-halo-fill: lighten(@water, 10%);
     }
   }
-  [zoom=15][area>1600000],
-  [zoom=16][area>80000],
-  [zoom=17][area>20000],
-  [zoom=18][area>5000] {
+  [zoom=16][area>1600000],
+  [zoom=17][area>80000],
+  [zoom=18][area>20000],
+  [zoom=19][area>5000] {
     text-name: "[name]";
     text-size: 13;
     text-wrap-width: 60;
     text-character-spacing: 1;
     text-halo-radius: 2;
   }
-  [zoom=16][area>1600000],
-  [zoom=17][area>80000],
-  [zoom=18][area>20000] {
+  [zoom=17][area>1600000],
+  [zoom=18][area>80000],
+  [zoom=19][area>20000] {
     text-size: 15;
     text-character-spacing: 2;
     text-wrap-width: 120;
   }
-  [zoom>=17][area>1600000],
-  [zoom>=18][area>80000] {
+  [zoom>=18][area>1600000],
+  [zoom>=19][area>80000] {
     text-size: 20;
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
 }
    
-#poi[type='university'][zoom>=15],
-#poi[type='hospital'][zoom>=16],
-#poi[type='school'][zoom>=17],
-#poi[type='library'][zoom>=17] {
+#poi[type='university'][zoom>=16],
+#poi[type='hospital'][zoom>=17],
+#poi[type='school'][zoom>=18],
+#poi[type='library'][zoom>=18] {
   text-name:"[name]";
   text-face-name:@sans;
   text-size:10;
@@ -342,9 +342,9 @@
 /* WATERWAY LABELS
 /* ================================================================== */
 
-#waterway_label[type='river'][zoom>=13],
-#waterway_label[type='canal'][zoom>=15],
-#waterway_label[type='stream'][zoom>=17] {
+#waterway_label[type='river'][zoom>=14],
+#waterway_label[type='canal'][zoom>=16],
+#waterway_label[type='stream'][zoom>=18] {
   text-name: '[name]';
   text-face-name: @sans_italic;
   text-fill: @water * 0.75;
@@ -428,7 +428,7 @@
   text-size:11;
 }
 
-#minorroad_label[zoom>14] {
+#minorroad_label[zoom>15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
