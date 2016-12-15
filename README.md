@@ -1,7 +1,7 @@
 OSM Bright
 ==========
 
-![screenshot](https://raw.github.com/mapbox/osm-bright/master/preview.png)
+![screenshot](/preview.png)
 
 OSM Bright is a sensible starting point for quickly making beautiful maps based
 on an OpenStreetMap database. It is written in the [Carto][] styling language
